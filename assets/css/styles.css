@@ -1,0 +1,16 @@
+
+:root{--navy:#0f1f38;--blue:#2457d6;--light:#eef4ff;--gold:#e0a72f;--text:#1e293b;--muted:#5f6b7a;--white:#fff;--border:#dce3ee;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.65;color:var(--text);background:#f7f9fc}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.container{width:min(calc(100% - 2rem),var(--max));margin:auto}
+header{color:white;background:linear-gradient(135deg,#0b1629,#173b72)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 0}
+.brand{color:white;font-weight:800}.navlinks{display:flex;flex-wrap:wrap;gap:1rem}.navlinks a{color:white}.hero{padding:6rem 0 5rem}
+.kicker{margin:0 0 .6rem;color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+h1{margin:0;font-size:clamp(3rem,8vw,6rem);line-height:1}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15}
+.hero p{max-width:760px;color:#dce6fa;font-size:1.2rem}.button{display:inline-block;padding:.8rem 1.1rem;border-radius:9px;font-weight:700;margin:.3rem}
+.primary{background:white;color:var(--navy)}.secondary{border:1px solid white;color:white}.section{padding:4.5rem 0}.alt{background:var(--light)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{padding:1.4rem;border:1px solid var(--border);border-radius:14px;background:white;box-shadow:0 8px 24px rgba(15,31,56,.06)}
+.tag{display:inline-block;padding:.2rem .55rem;border-radius:999px;background:#e7efff;color:#173b72;font-size:.8rem;font-weight:800}
+.callout{padding:1.2rem;border-left:5px solid var(--blue);background:white}.pagehead{padding:3rem 0}.pagehead h1{font-size:clamp(2.3rem,6vw,4.5rem)}
+main.content{padding:4rem 0}footer{padding:1.4rem 0;color:#c8d3e6;background:#091120}
+@media(max-width:800px){nav{align-items:flex-start;flex-direction:column}.grid,.two{grid-template-columns:1fr}.hero{padding:4rem 0}}
